@@ -54,36 +54,35 @@ GTM / Tag Manager Installation or Modification
 Create the dataLayer-allPages snippet ( use exact naming and casing! )
 
 * Create a snippet called dataLayer-allPages and copy over the provided [dataLayer-allPages.js](https://github.com/Niamul82773/dataLayer-shopify/blob/main/dataLayer-allPages.js) in the newly created snippet. In the code, navigate to the “Dynamic Dependencies” section and make any necessary changes.
-
-/**********************
-* DYNAMIC DEPENDENCIES
-***********************/
+`````/**********************`````
+`````* DYNAMIC DEPENDENCIES`````
+`````***********************/`````
         
- __DL__ = {
-    dynamicCart: true,  // if cart is dynamic (meaning no refresh on cart add) set to true
-    debug: true, // if true, console messages will be displayed
-    cart: null,
-    wishlist: null,
-    removeCart: null
-};
+ `````__DL__ = {`````
+    `````dynamicCart: true,  // if cart is dynamic (meaning no refresh on cart add) set to true`````
+    `````debug: true, // if true, console messages will be displayed`````
+    `````cart: null,`````
+    `````wishlist: null,`````
+    `````removeCart: null`````
+`````};`````
         
-customBindings = {
-    cartTriggers: [],
-    viewCart: [],
-    removeCartTrigger: [],
-    cartVisableSelector: [],
-    promoSubscriptionsSelectors: [],
-    promoSuccess: [],
-    ctaSelectors: [],
-    newsletterSelectors: [],
-    newsletterSuccess: [],
-    searchPage: [],
-    wishlistSelector: [],
-    removeWishlist: [],
-    wishlistPage: [],
-    searchTermQuery: [getURLParams('q')], // replace var with correct query
-};
-       
+`````customBindings = {`````
+    `````cartTriggers: [],`````
+    `````viewCart: [],`````
+    `````removeCartTrigger: [],`````
+    `````cartVisableSelector: [],`````
+    `````promoSubscriptionsSelectors: [],`````
+    `````promoSuccess: [],`````
+    `````ctaSelectors: [],`````
+    `````newsletterSelectors: [],`````
+    `````newsletterSuccess: [],`````
+    `````searchPage: [],`````
+    `````wishlistSelector: [],`````
+    `````removeWishlist: [],`````
+    `````wishlistPage: [],`````
+    `````searchTermQuery: [getURLParams('q')], // replace var with correct query`````
+`````};`````
+        
 Add the code to the layouts
 * Within the theme.liquid layout, place this include snippet {% include 'dataLayer-allPages' %} right before the closing </head> tag
 * Within the confirmation page admin settings, copy over the provided [dataLayer-allPages.js](https://github.com/TechnicalWebAnalytics/dataLayer-shopify/blob/master/dataLayer-allPages.js) code directly above the GTM code block. ( Remember, snippets cannot be used in this section so the actual code block must be added )
@@ -120,34 +119,34 @@ GTM / Tag Manager Installation or Modification
 Create the dataLayer-allPages Snippet ( use exact naming and casing! )
 * Create a snippet called dataLayer-allPages and copy over the provided [dataLayer-allPages.js](https://github.com/TechnicalWebAnalytics/dataLayer-shopify/blob/master/dataLayer-allPages.js) in the newly created snippet. In the code, navigate to the “Dynamic Dependencies” section and make any necessary changes.
 
-/**********************
-* DYNAMIC DEPENDENCIES
-***********************/
+```/**********************```
+```* DYNAMIC DEPENDENCIES```
+```***********************/```
       
-__DL__ = {
-  dynamicCart: true,  // if cart is dynamic (meaning no refresh on cart add) set to true
-  debug: true, // if true, console messages will be displayed
-  cart: null,
-  wishlist: null,
-  removeCart: null
-};
+```__DL__ = {```
+  ```dynamicCart: true,  // if cart is dynamic (meaning no refresh on cart add) set to true```
+  ```debug: true, // if true, console messages will be displayed```
+  ```cart: null,```
+  ```wishlist: null,```
+  ```removeCart: null```
+```};```
       
-customBindings = {
-  cartTriggers: [],
-  viewCart: [],
-  removeCartTrigger: [],
-  cartVisableSelector: [],
-  promoSubscriptionsSelectors: [],
-  promoSuccess: [],
-  ctaSelectors: [],
-  newsletterSelectors: [],
-  newsletterSuccess: [],
-  searchPage: [],
-  wishlistSelector: [],
-  removeWishlist: [],
-  wishlistPage: [],
-  searchTermQuery: [getURLParams('q')], // replace var with correct query
-};
+```customBindings = {```
+  ```cartTriggers: [],```
+  ```viewCart: [],```
+  ```removeCartTrigger: [],```
+  ```cartVisableSelector: [],```
+  ```promoSubscriptionsSelectors: [],```
+  ```promoSuccess: [],```
+  ```ctaSelectors: [],```
+  ```newsletterSelectors: [],```
+  ```newsletterSuccess: [],```
+  ```searchPage: [],```
+  ```wishlistSelector: [],```
+  ```removeWishlist: [],```
+  ```wishlistPage: [],```
+  ```searchTermQuery: [getURLParams('q')], // replace var with correct query```
+```};```
 
 Add the code to the layouts
 
